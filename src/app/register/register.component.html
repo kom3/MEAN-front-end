@@ -1,0 +1,33 @@
+<html>
+<head>
+
+    <style>
+        
+        input{
+
+            width:500px;
+        }
+        .align{
+
+            padding:20px;
+        }
+        
+        </style>
+</head>
+
+
+<body>
+<form class="form-horizontal align">
+
+    <div class="form-group">
+   <label> username :</label>
+    <input class="form-control" type="text" (keyup)="enteredUname($event)" name="username"><br>
+    </div>
+    <div class="form-group">
+    <label>age :</label>
+    <input class="form-control" type="number" (keyup)="enteredAge($event)" name="age"> <br>
+    </div>
+   <button class="btn btn-success" (click)="sendData(username,age)">send</button>
+</form>
+</body>
+</html>

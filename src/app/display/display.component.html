@@ -1,0 +1,32 @@
+<button (click)="getData()" style="background-color:rgb(0, 89, 255);font-size: 18px"><b>Fetch Users Details</b></button>&nbsp;
+<button (click)="clearTable()" style="background-color:red;font-size: 18px"><b>Clear Table</b></button>
+<style>
+table, th, td {
+    border: 1px solid rgb(185, 0, 202);
+    
+  }
+
+  table{
+
+    margin-left: 50%;
+    margin-top: 5px;
+  }
+  </style>
+
+
+<table style="text-align:center;">
+        <col width="100">
+        <col width="100">
+
+
+<tr>
+<th>Name</th>
+<th>age</th>
+</tr>
+
+<tr>
+<td id="namedump"></td>
+<td id="agedump"></td>
+</tr>
+
+</table>
